@@ -1,0 +1,25 @@
+# Docker Compose configuration for local development
+
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - FLASK_DEBUG=True
+      - MONGODB_URI=${MONGODB_URI}
+      - MONGODB_DB_NAME=smartflashcard
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - FRONTEND_URL=http://localhost:5173
+    volumes:
+      - .:/app
+    command: python run.py
+    networks:
+      - smartflashcard-network
+
+networks:
+  smartflashcard-network:
+    driver: bridge

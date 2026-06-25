@@ -1,0 +1,35 @@
+2026-06-24 09:57:34,848 - utils.database - INFO - Database indexes created successfully
+2026-06-24 09:57:34,853 - utils.database - INFO - Connected to MongoDB: smartflashcard
+2026-06-24 09:57:34,864 - app - INFO - Flask app created with config: development
+2026-06-24 09:57:34,924 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.98.24.165:5000
+2026-06-24 09:57:34,925 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 09:57:34,940 - werkzeug - INFO -  * Restarting with stat
+2026-06-24 09:57:38,392 - utils.database - INFO - Database indexes created successfully
+2026-06-24 09:57:38,392 - utils.database - INFO - Connected to MongoDB: smartflashcard
+2026-06-24 09:57:38,402 - app - INFO - Flask app created with config: development
+2026-06-24 09:57:38,414 - werkzeug - WARNING -  * Debugger is active!
+2026-06-24 09:57:38,421 - werkzeug - INFO -  * Debugger PIN: 132-217-851
+2026-06-24 10:05:21,873 - utils.database - INFO - Database connection closed
+2026-06-24 10:05:21,874 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 10:05:21] "GET /api/health HTTP/1.1" 200 -
+2026-06-24 10:05:59,014 - werkzeug - INFO -  * Detected change in 'E:\\task\\smart-flashcard-backend\\config.py', reloading
+2026-06-24 10:05:59,577 - werkzeug - INFO -  * Restarting with stat
+2026-06-24 10:06:04,248 - utils.database - INFO - Database indexes created successfully
+2026-06-24 10:06:04,249 - utils.database - INFO - Connected to MongoDB: smartflashcard
+2026-06-24 10:06:04,258 - app - INFO - Flask app created with config: development
+2026-06-24 10:06:04,269 - werkzeug - WARNING -  * Debugger is active!
+2026-06-24 10:06:04,274 - werkzeug - INFO -  * Debugger PIN: 132-217-851
+2026-06-24 10:06:56,886 - models.user - INFO - User created: ui-test-217163435@example.com
+2026-06-24 10:06:56,888 - utils.database - INFO - Database connection closed
+2026-06-24 10:06:56,890 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 10:06:56] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-06-24 10:06:56,958 - routes.flashcards - ERROR - Generate flashcards error: Database not initialized. Call init_db() first.
+2026-06-24 10:06:56,959 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 10:06:56] "[35m[1mPOST /api/generate HTTP/1.1[0m" 500 -
+2026-06-24 10:07:41,646 - werkzeug - INFO -  * Detected change in 'E:\\task\\smart-flashcard-backend\\app.py', reloading
+2026-06-24 10:07:42,277 - werkzeug - INFO -  * Restarting with stat
+2026-06-24 10:07:46,755 - utils.database - INFO - Database indexes created successfully
+2026-06-24 10:07:46,756 - utils.database - INFO - Connected to MongoDB: smartflashcard
+2026-06-24 10:07:46,763 - app - INFO - Flask app created with config: development
+2026-06-24 10:07:46,776 - werkzeug - WARNING -  * Debugger is active!
+2026-06-24 10:07:46,780 - werkzeug - INFO -  * Debugger PIN: 132-217-851

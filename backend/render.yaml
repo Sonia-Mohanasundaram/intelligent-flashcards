@@ -1,0 +1,15 @@
+# Render.com deployment configuration
+
+runtime: python-3.11
+modules:
+  - name: "web"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: JWT_SECRET_KEY
+        sync: false
+
+build: |
+  pip install -r requirements.txt
+
+start: python run.py
