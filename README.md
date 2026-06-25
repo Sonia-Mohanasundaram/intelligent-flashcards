@@ -112,8 +112,12 @@ Copy `.env.example` to `.env` in the `backend/` folder and configure:
 ### Frontend (Vercel)
 
 1. Point Vercel to the repo and set the project directory to `frontend/`.
-2. Build command: `npm install && npm run build`
-3. Output directory: `dist`
+2. Provide the environment variable `VITE_API_URL` pointing to your deployed backend API, for example:
+   ```bash
+   https://your-backend.onrender.com/api
+   ```
+3. Build command: `npm install && npm run build`
+4. Output directory: `dist`
 
 ### Backend (Render)
 
@@ -126,7 +130,7 @@ Copy `.env.example` to `.env` in the `backend/` folder and configure:
    ```bash
    python run.py
    ```
-4. Add environment variables in Render from the backend `.env` settings.
+4. Add environment variables in Render matching `backend/.env.example`.
 
 ### MongoDB Atlas
 

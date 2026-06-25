@@ -67,3 +67,10 @@ class TestAuthRoutes(unittest.TestCase):
         self.assertIn('token', data)
         self.assertIn('user', data)
         self.assertEqual(data['user']['email'], payload['email'])
+
+    def test_health_endpoint(self):
+        response = self.client.get('/api/health')
+        self.assertEqual(response.status_code, 200)
+        data = response.get_json()
+        self.assertEqual(data.get('status'), 'ok')
+        self.assertIn('message', data)
